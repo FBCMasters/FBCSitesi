@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi ailesi */
+    font-size: 10px; /* <p></p> etiketindeki ana yazının boyutu */
+    background-color: #00ffc8; /* Web sayfasının arka plan rengi */
+    color: #0058aa; /* Metin rengi */
+}
+
+h1 {
+    color: #ff0000; /* Başlık rengi */
+    font-size: 32px; /* Başlık yazı tipi boyutu */
+    font-family: 'Inter'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+h2 {
+    color: #ff7b00; /* Başlık rengi */
+    font-size: 17px; /* Başlık yazı tipi boyutu */
+    font-family: Georgia, serif; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+h3 {
+    color: #1900ff; /* Başlık rengi */
+    font-size: 25px; /* Başlık yazı tipi boyutu */
+    font-family: 'Pixel', 'Pixel'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
