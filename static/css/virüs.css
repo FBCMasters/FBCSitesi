@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi ailesi */
+    font-size: 10px; /* <p></p> etiketindeki ana yazının boyutu */
+    background-color: black; /* Web sayfasının arka plan rengi */
+    color: red; /* Metin rengi */
+}
+
+h1 {
+    color: red; /* Başlık rengi */
+    font-size: 40px; /* Başlık yazı tipi boyutu */
+    font-family: 'Inter'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+h2 {
+    color: red; /* Başlık rengi */
+    font-size: 40px; /* Başlık yazı tipi boyutu */
+    font-family: 'Inter'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+a {
+    color: red; /* Başlık rengi */
+    font-size: 20px; /* Başlık yazı tipi boyutu */
+    font-family: 'Inter'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+@keyframes hacked {
+    0% {
+      color: red;
+    }
+  
+    25% {
+      color: red;
+    }
+  
+    50% {
+      color: orange;
+    }
+
+    65% {
+      color: white;
+    }
+    
+    75% {
+      color: orange;
+    }
+
+    80% {
+        color: red;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+h1 {
+    animation: hacked 1000ms infinite;
+}
+
+h2 {
+    animation: hacked 1000ms infinite;
+}
+
+a {
+    animation: hacked 1000ms infinite;
+}
+
+h2:hover { animation: hacked 200ms infinite; }
+
+a:hover { animation: hacked 200ms infinite; }

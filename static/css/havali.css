@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi ailesi */
+    font-size: 10px; /* <p></p> etiketindeki ana yazının boyutu */
+    background-color: black; /* Web sayfasının arka plan rengi */
+    color: blue; /* Metin rengi */
+}
+
+h1 {
+    color: blue; /* Başlık rengi */
+    font-size: 32px; /* Başlık yazı tipi boyutu */
+    font-family: 'Inter'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+  
+    25% {
+      color: cyan;
+    }
+  
+    50% {
+      color: lime;
+    }
+
+    65% {
+      color: green;
+    }
+    
+    75% {
+      color: darkgreen;
+    }
+
+    80% {
+        color: blue;
+    }
+
+    100% {
+        color: blue;
+    }
+}
+
+h1 {
+    animation: color-change 500ms infinite;
+}

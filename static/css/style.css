@@ -29,6 +29,12 @@ h4 {
     font-family: 'Pixel', 'Pixel'; /* Başlıkta kullanılan yazı tipi ailesi */
 }
 
+a {
+  color: #0059ff; /* Başlık rengi */
+  font-size: 25px; /* Başlık yazı tipi boyutu */
+  font-family: 'Pixel', 'Pixel'; /* Başlıkta kullanılan yazı tipi ailesi */
+}
+
 @keyframes color-change {
     0% {
       color: blue;
@@ -78,6 +84,8 @@ h1 {
 }
 
 h3:hover { animation: color-change 100ms infinite; }
+
+a:hover { animation: color-change 100ms infinite; }
 
 h4 {
     animation: color-change 500ms infinite;

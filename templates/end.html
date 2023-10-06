@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../static/css/end.css"> 
+  <title>Akıllı evler için enerji verimlilik hesaplayıcısı</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h3>Evinizin enerji verimliliğini hesaplayın!</h3>
+      <h4>Girişimde bulunun ve aşırı enerji tüketimi sorununu çözün!</h4>
+    </div>
+  </header>
+  <main>
+    <link rel="stylesheet" href="../../static/css/end.css">
+    {% block content %}
+    <h2 class="main__title main__title--margin">Evinizin enerji verimliliği:</h2>
+    <div class="main__rez" id="end">
+        {%if result <= 0%}
+        <img class="rez__img" src="../../static/img/planet_good.svg" alt="">
+        <h5>Sonucunuz {{result}} kWh</h5>
+        <h5>🙂🙂🙂Böyle kolay bir yöntemle para kazanıcağınızı hiç düşünmemiştim!🙂🙂🙂</h5>
+        {%elif result > 0 and result < 150%}
+        <img class="rez__img" src="../../static/img/planet_good.svg" alt="">
+        <h5>Sonucunuz {{result}} kWh</h5>
+        <h5>Eviniz enerji tüketimi konusunda son derece verimlidir!</h5>
+        {%elif result > 150 and result < 300%}
+        <img class="rez__img" src="../../static/img/planet_medium.svg" alt="">
+        <h3>Sonucunuz {{result}} kWh</h3>
+        <h3>Evınızın enerji verimliliği orta düzeydedir!</h3>
+        {%elif result > 300 and result < 1051%}
+        <img class="rez__img" src="../../static/img/planet_bad.svg" alt="">
+        <h6>Sonucunuz {{result}} kWh</h6>
+        <h6>Evınızın enerji verimliliği ortalamadan düşüktür!</h6>
+        {%elif result >= 1051%}
+        <img class="rez__img" src="../../static/img/planet_bad.svg" alt="">
+        <h6>Sonucunuz {{result}} kWh</h6>
+        <h6>💀💀💀Faturanıza bakmayı bile denemeyin!💀💀💀</h6>
+        {%endif%}
+    </div>
+    {% endblock %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
